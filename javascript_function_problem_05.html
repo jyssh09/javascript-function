@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      function print_fizz_buzz() 
+      {   for(i = 1; i <= 100; i++)
+	  {	var number = i;
+		       document.write(number+" : ");
+
+		if(number%3 == 0) // number가 3의 배수라면?
+		{
+			document.write("fizz");
+		}
+
+	        if(number%5 == 0)  // number가 5의 배수라면?
+		{
+		 	document.write("buzz");
+		}
+
+		if(number%3 != 0 && number%5 != 0)  //number가 3의 배수도 아니고 5의 배수도 아니라면?
+		{
+			document.write(number);
+	        }
+	       document.write('<br>');
+	  }
+      }
+
+      print_fizz_buzz();
+    </script>
+</head>
+<body>
+</body>
+</html>
